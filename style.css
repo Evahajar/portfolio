@@ -1,109 +1,71 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /* Header */
-  header {
-    background: linear-gradient(135deg, #4CAF50, #2E8B57);
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  header h1 {
-    font-size: 2.5rem;
-  }
-  
-  header .highlight {
-    color: #FFD700;
-  }
-  
-  header p {
-    margin: 15px 0;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #FFD700;
-    color: #333;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    margin-top: 15px;
-  }
-  
-  /* Container */
-  .container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-  }
-  
-  /* Sections */
-  h2 {
-    color: #2E8B57;
-    margin-bottom: 10px;
-  }
-  
-  section {
-    background: white;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-  
-  /* Skills */
-  .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-  }
-  
-  .skills-list li {
-    background: #4CAF50;
-    color: white;
-    padding: 8px 15px;
-    margin: 5px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-  }
-  
-  /* Projects */
-  .project-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 6px;
-    margin-bottom: 15px;
-  }
-  
-  .project-card h3 {
-    margin-bottom: 5px;
-  }
-  
-  .project-card a {
-    color: #4CAF50;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 15px;
-    background: #333;
-    color: white;
-    margin-top: 20px;
-  }
-  
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fcefee; /* baby pink */
+  color: #4b2e2e; /* dark beige/brownish text */
+}
+
+header {
+  background: #f7e7ce; /* beige */
+  color: #4b2e2e; 
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #b56576; /* muted rose accent */
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background: #fffaf7; /* soft beige/cream */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+h2 {
+  border-bottom: 2px solid #f7a8a8; /* baby pink accent */
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #b56576; 
+}
+
+a {
+  color: #b56576;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #8d4a57;
+}
+
+.project-card {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-left: 4px solid #f7a8a8; /* pink border */
+  background: #fff0f3; /* light pink background */
+  border-radius: 8px;
+}
+
+.btn {
+  display: inline-block;
+  background: #f7a8a8; /* button pink */
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #b56576; /* darker rose */
+}
