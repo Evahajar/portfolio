@@ -69,3 +69,20 @@ a:hover {
 .btn:hover {
   background: #b56576; /* darker rose */
 }
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.skills img {
+  transition: transform 0.3s ease;
+}
+
+.skills img:hover {
+  transform: scale(1.2);
+}
+
+
