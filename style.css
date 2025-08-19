@@ -1,3 +1,6 @@
+/* =========================
+   GLOBAL / LIGHT MODE
+========================= */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -69,6 +72,7 @@ a:hover {
 .btn:hover {
   background: #b56576; /* darker rose */
 }
+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -84,42 +88,7 @@ a:hover {
 .skills img:hover {
   transform: scale(1.2);
 }
-/* Toggle button styling */
-#dark-mode-toggle {
-  background: #f7a8a8;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  float: right;
-  margin-top: -40px; /* adjust if needed */
-}
 
-#dark-mode-toggle:hover {
-  background: #b56576;
-}
-
-/* Dark mode styles */
-body.dark-mode {
-  background: #1e1e1e;
-  color: #f5f5f5;
-}
-
-body.dark-mode header {
-  background: #333;
-  color: #f5f5f5;
-}
-
-body.dark-mode section {
-  background: #2a2a2a;
-  color: #f5f5f5;
-}
-
-body.dark-mode a {
-  color: #f7a8a8;
-}
 /* Skills Section */
 #skills {
   text-align: center;
@@ -155,34 +124,56 @@ body.dark-mode a {
   color: #4b2e2e;
 }
 
+/* Toggle button */
+#dark-mode-toggle {
+  background: #f7a8a8;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  float: right;
+  margin-top: -40px; /* adjust if needed */
+}
+
+#dark-mode-toggle:hover {
+  background: #b56576;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+body.dark-mode {
+  background: #1e1e1e;
+  color: #f5f5f5;
+}
+
+body.dark-mode header {
+  background: #333;
+  color: #f5f5f5;
+}
+
+body.dark-mode section {
+  background: #2a2a2a;
+  color: #f5f5f5;
+}
+
+body.dark-mode a {
+  color: #f7a8a8;
+}
+
+body.dark-mode a:hover {
+  color: #f7c6c6;
+}
+
+/* Skills text */
 body.dark-mode .skill p {
   color: #f5f5f5;
 }
-/* Buttons in dark mode */
-body.dark-mode .btn {
-  background: #b56576;   /* darker rose for contrast */
-  color: #fff;           /* white text */
-}
 
-body.dark-mode .btn:hover {
-  background: #f7a8a8;   /* lighter pink on hover */
-  color: #4b2e2e;        /* dark beige text */
-}
-/* Projects section text in dark mode */
-body.dark-mode .project-card {
-  background: #2c2c2c; /* dark background */
-  border-left: 4px solid #f7a8a8; /* pink accent */
-}
-
-body.dark-mode .project-card h3,
-body.dark-mode .project-card p {
-  color: #f5f5f5; /* light text */
-}
-/* =========================
-   DARK MODE FIXES
-========================= */
-
-/* Make buttons readable in dark mode */
+/* Buttons */
 body.dark-mode .btn {
   background: #f7a8a8;   /* soft pink */
   color: #fff;           /* white text */
@@ -193,7 +184,7 @@ body.dark-mode .btn:hover {
   color: #fff;
 }
 
-/* Project cards in dark mode */
+/* Project cards */
 body.dark-mode .project-card {
   background: #3a3330;   /* warm dark gray */
   color: #fcefee;        /* soft pinkish text */
@@ -204,7 +195,7 @@ body.dark-mode .project-card h3 {
   color: #f7c6c6;        /* light pink for titles */
 }
 
-/* Contact links in dark mode */
+/* Contact links */
 body.dark-mode #contact a {
   color: #f7c6c6;  /* light pink */
 }
@@ -212,7 +203,6 @@ body.dark-mode #contact a {
 body.dark-mode #contact a:hover {
   color: #f7a8a8;  /* brighter pink hover */
 }
-
 
 
 
