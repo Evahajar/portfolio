@@ -273,6 +273,52 @@ body.dark-mode #contact a {
 body.dark-mode #contact a:hover {
   color: #f7a8a8;
 }
+/* Import a modern professional font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #4b2e2e; /* keep your text color */
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600; /* headings are bold */
+  color: #b56576; /* keep your rose accent */
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p, li, a {
+  font-weight: 400; /* body text regular */
+  font-size: 1rem;
+}
+
+a {
+  font-weight: 500; /* slightly bolder links */
+}
+
+/* Optional: increase spacing for readability */
+section {
+  padding: 40px 20px;
+}
+
+.skills-grid, .timeline, .project-card {
+  gap: 25px; /* slightly more breathing room */
+}
+
+
 
 
 
