@@ -115,16 +115,16 @@
   <footer>
     <p>© 2025 Hajar Natiq | Built with ❤️</p>
   </footer>
-  <script>
+ <script>
   const toggleButton = document.getElementById('dark-mode-toggle');
   const body = document.body;
 
+  // Dark mode toggle
   toggleButton.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
     toggleButton.textContent = body.classList.contains('dark-mode') ? "☀️ Light Mode" : "🌙 Dark Mode";
   });
-</script>
-  <script>
+
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -135,21 +135,31 @@
     });
   });
 
-  // Fade-in sections on scroll
-  const sections = document.querySelectorAll('section');
+  // Fade-in sections, project cards, and timeline items
+  const observerOptions = { threshold: 0.1 };
+  
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if(entry.isIntersecting){
         entry.target.classList.add('visible');
       }
     });
-  }, { threshold: 0.1 });
+  }, observerOptions);
 
-  sections.forEach(section => observer.observe(section));
+  // Observe sections
+  document.querySelectorAll('section').forEach(section => observer.observe(section));
+
+  // Observe project cards
+  document.querySelectorAll('.project-card').forEach(card => observer.observe(card));
+
+  // Observe timeline items
+  document.querySelectorAll('.timeline-item').forEach(item => observer.observe(item));
 </script>
+
 
 </body>
 </html>
+
 
 
 
