@@ -304,5 +304,10 @@ section.visible {
   opacity: 1;
   transform: translateX(0);
 }
+html {
+  scroll-behavior: smooth;
+}
+
+
 
 
