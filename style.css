@@ -317,6 +317,78 @@ section {
 .skills-grid, .timeline, .project-card {
   gap: 25px; /* slightly more breathing room */
 }
+/* Primary Colors */
+:root {
+  --primary-bg: #fdf6f6;   /* very light pink background */
+  --secondary-bg: #fffaf7; /* soft beige/cream */
+  --accent-color: #b56576; /* muted rose accent */
+  --highlight-color: #f7a8a8; /* baby pink highlight */
+  --text-color: #4b2e2e;   /* dark brownish text */
+  --link-hover: #8d4a57;   /* darker rose for hover */
+}
+
+/* General body and background */
+body {
+  background: var(--primary-bg);
+  color: var(--text-color);
+}
+
+/* Section backgrounds */
+section, .timeline-item, .project-card {
+  background: var(--secondary-bg);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: var(--accent-color);
+}
+
+/* Links */
+a {
+  color: var(--accent-color);
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn, #dark-mode-toggle {
+  background: linear-gradient(135deg, var(--highlight-color), var(--accent-color));
+  color: #fff;
+}
+
+.btn:hover, #dark-mode-toggle:hover {
+  background: linear-gradient(135deg, var(--accent-color), var(--highlight-color));
+}
+
+/* Dark Mode */
+body.dark-mode {
+  --primary-bg: #1e1e1e;
+  --secondary-bg: #2a2a2a;
+  --accent-color: #f7a8a8;
+  --highlight-color: #b56576;
+  --text-color: #f5f5f5;
+  --link-hover: #f7c6c6;
+}
+body.dark-mode {
+  background: var(--primary-bg);
+  color: var(--text-color);
+}
+body.dark-mode section, 
+body.dark-mode .timeline-item, 
+body.dark-mode .project-card {
+  background: var(--secondary-bg);
+}
+body.dark-mode a {
+  color: var(--accent-color);
+}
+body.dark-mode a:hover {
+  color: var(--link-hover);
+}
+
+
 
 
 
