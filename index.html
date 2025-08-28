@@ -9,6 +9,18 @@
 <body>
   <!-- Header / Hero -->
   <header>
+    <!-- Menu Button -->
+<button id="menu-toggle">☰</button>
+
+<!-- Sidebar Navigation -->
+<nav id="sidebar">
+  <a href="#timeline">🏆 Career</a>
+  <a href="#skills">💻 Skills</a>
+  <a href="#projects">📂 Projects</a>
+  <a href="#languages">🌍 Languages</a>
+  <a href="#contact">📞 Contact</a>
+</nav>
+
     <div class="container">
       <h1>👋 Hi, I'm <span class="highlight">Hajar Natiq</span></h1>
       <p>Computer Science Student at Roehampton University | Aspiring Software Developer</p>
@@ -166,11 +178,17 @@
     }
   });
 });
+   // Sidebar toggle
+document.getElementById("menu-toggle").addEventListener("click", function() {
+  document.getElementById("sidebar").classList.toggle("active");
+});
+
 </script>
 
 
 </body>
 </html>
+
 
 
 
